@@ -1,22 +1,17 @@
 {
-    "title": "",
-    "slug": "",
-    "description": "",
+    "title": "Programming: Floating Point Error",
+    "slug": "programming-floating-point-error",
+    "description": "An introduction to floating point error in programming.",
     "authors": [
-        "",
-        ""
+        "chris-cooling"
     ],
     "tags": [
-        "",
-        ""
+        "programming"
     ],
-    "duration": 0,
+    "duration": 3,
     "prerequisites": [
-        "",
-        ""
+        "programming-integers-and-floats"
     ],
     "related": [
-        "",
-        ""
     ]
 }
