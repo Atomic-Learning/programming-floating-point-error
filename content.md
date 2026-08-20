@@ -1,0 +1,13 @@
+Floating point numbers are a way to represent real numbers in programming, but they can introduce small errors due to their finite precision. Without going into detail of the underlying representation, it's sufficient to understand that these numbers are stored as a finite number of binary digits, which can only take a finite number of values. As such, not every real number can be represented exactly, leading to rounding errors in calculations.
+
+# A Simple Example
+
+Let's imagine we want to add 0.1 and 0.2 in a programming language that uses floating point representation. We know that this would give us 0.3 in "normal" maths, but it's not actually possible to represent 0.1, 0.2, or 0.3 exactly in most binary floating points.
+
+Instead, 0.1 and 0.2 will first be represented as the nearest floating point numbers. These values will then be added together, and the mechanism of adding floating point numbers (which we're not going to go into here) introduces a small rounding error as well. As a result, the final result of the addition may not be exactly 0.3, but something very close to it. When running this calculation in Python, for example adding 0.1 and 0.2 yields `0.30000000000000004` instead of 0.3. As can be seen, the error is very small and, in many cases this sort of error can be ignored.
+
+All programming languages will exhibit similar behaviour. However, each language may have different ways of storing values, adding them and displaying the results, which may lead to slightly different outputs.
+
+# Interpreting Output
+
+For many novice programmers, examining the output of an arithmetic operation and seeing a result like `0.30000000000000004` can be confusing. It's important to understand that this is not a bug in the programming language or an error in the calculation; rather, it's a consequence of how floating point numbers are represented in computers.
